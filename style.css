@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300|500|700");
+* {
+  font-family: "Quicksand", sans-serf !important;
+}
+
+#page-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.group {
+  float: right;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.complete {
+  text-decoration: line-through;
+}
+
+footer {
+  height: 100px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.todo-item h4 {
+  margin-right: auto
+}
