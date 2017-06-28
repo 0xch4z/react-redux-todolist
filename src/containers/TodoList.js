@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import { ListGroup } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 
-import TodoItem from './TodoItem';
+import TodoItem from '../components/TodoItem';
 
 import {
   completeItem,
