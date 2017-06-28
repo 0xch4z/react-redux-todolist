@@ -1,0 +1,27 @@
+{
+  "name": "react-redux-todolist",
+  "author": "Charles Kenney",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-bootstrap": "^0.31.0",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.1",
+    "redux-logger": "^3.0.6",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build&&gh-pages -d build"
+  },
+  "homepage": "https://charliekenney23.github.io/react-redux-todolist"
+}
