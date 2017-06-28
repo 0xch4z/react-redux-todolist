@@ -15,7 +15,6 @@ class TodoList extends Component {
   getTodos() {
     let { todos } = this.props;
     if (!todos.length) {
-      console.log('no todos')
       return (
         <h2 className="text-center">{"No todos to display 😕"}</h2>
       );
@@ -36,7 +35,6 @@ class TodoList extends Component {
   }
 
   render() {
-    console.log(this.props)
     return(
       <div>
         <h1 className="text-center">Your Todos</h1>

@@ -7,8 +7,14 @@ import { logger } from 'redux-logger';
 import RootReducer from './reducers';
 import App from './components/App';
 
-const store = createStore(RootReducer, applyMiddleware(logger));
+let store;
 const root = document.getElementById('root');
+
+if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+    store = createStore(RootReducer, applyMiddleware(logger));
+} else {
+    store = createStore(RootReducer);
+}
 
 render(
   <Provider store={store}>
