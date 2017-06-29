@@ -19,7 +19,6 @@ class TodoInput extends Component {
     }
   }
   onInputChange(e) {
-    console.log(this.state);
     this.setState({
       input: e.target.value
     });

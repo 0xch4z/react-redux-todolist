@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { ListGroup } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 
 import TodoItem from '../components/TodoItem';
+import AnimatedList from '../components/AnimatedList';
 
 import {
   completeItem,
@@ -20,7 +20,7 @@ class TodoList extends Component {
       );
     } else {
       return(
-        <ListGroup>
+        <AnimatedList>
           {todos.map(item =>
             <TodoItem
               key={item.id}
@@ -29,7 +29,7 @@ class TodoList extends Component {
               deleteItem={this.props.deleteItem}
             />
           )}
-        </ListGroup>
+        </AnimatedList>
       );
     }
   }
